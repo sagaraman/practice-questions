@@ -9,4 +9,22 @@ int main()
     {
         cin >> arr[i];
     }
+    int j = 1;
+    while(j<=t)
+    {
+        for (int i = 0; i+1 < n;i++)
+        {
+            if(arr[i]=='B'&&arr[i+1]=='G')
+            {
+                arr[i] = 'G';
+                arr[i + 1] = 'B';
+                i += 1;
+            }
+        }
+        j++;
+    }
+    for (int i = 0; i < n;i++)
+    {
+        cout << arr[i];
+    }
 }
